@@ -1,0 +1,96 @@
+{
+  "interact": {
+    "magic": "APF_VER_1",
+    "variables": [
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+        "name": "Analog Controls",
+        "id": 2,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000008",
+        "defaultval": 0,
+        "value": "0x2",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFFD"
+      },
+      {
+        "name": "Test Switch",
+        "id": 3,
+        "type": "check",
+        "enabled": true,
+        "persist": false,
+        "address": "0xFA000000",
+        "value": "0xFEFF",
+        "value_off": "0xFFFF",
+        "mask": "0xFFFF0000"
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+        "name": "P1 Inf. Lives",
+        "id": 41,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x1",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFFE"
+      },
+      {
+        "name": "P2 Inf. Lives",
+        "id": 42,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x2",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFFD"
+      },
+      {
+        "name": "P1 Inf. Bombs",
+        "id": 43,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x4",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFFB"
+      },
+      {
+        "name": "P2 Inf. Bombs",
+        "id": 44,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x8",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFF7"
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      }
+      ]
+    }
+  }
