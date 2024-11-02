@@ -1,0 +1,239 @@
+{
+    "interact": {
+      "magic": "APF_VER_1",
+      "variables": [
+        {
+          "id": 0,
+          "name": "----------------",
+          "type": "action",
+          "enabled": false,
+          "address": "0xF0000000",
+          "value": 0
+        },
+        {
+          "name": "Coin",
+          "id": 2,
+          "type": "list",
+          "enabled": true,
+          "persist": true,
+          "address": "0xFA000000",
+          "mask": "0xFFFFFFFC",
+          "defaultval": 0,
+          "options":[
+            {
+                "value":"0x3",
+                "name":"1 Coin 1 Play"
+            },
+            {
+                "value":"0x2",
+                "name":"1 Coin 2 Play"
+            },
+            {
+                "value":"0x1",
+                "name":"2 Coin 1 Play"
+            },
+            {
+                "value":"0x0",
+                "name":"3 Coin 1 Play"
+            }
+          ]
+        },
+        {
+        "name": "Continue Price",
+        "id": 3,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFEF",
+        "defaultval": 1,
+        "options":[
+            {
+                "value":"0x0",
+                "name":"Without Continue Price"
+            },
+            {
+                "value":"0x10",
+                "name":"With Continue Price"
+            }
+          ]
+        },
+        {
+        "name": "Sound for Demo",
+        "id": 4,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFDF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x20",
+                "name":"Sound"
+            },
+            {
+                "value":"0x0",
+                "name":"No Sound"
+            }
+          ]
+        },
+        {
+        "name": "Screen Invert",
+        "id": 5,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFBF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x40",
+                "name":"Normal"
+            },
+            {
+                "value":"0x0",
+                "name":"Invert"
+            }
+          ]
+        },
+        {
+        "name": "Degree of Difficulty",
+        "id": 9,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFCFF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x300",
+                "name":"Normal"
+            },
+            {
+                "value":"0x200",
+                "name":"Easy"
+            },
+            {
+                "value":"0x100",
+                "name":"Less Than Difficult"
+            },
+            {
+                "value":"0x0",
+                "name":"Difficult"
+            }
+          ]
+        },
+        {
+        "name": "PvP Damage",
+        "id": 10,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFBFF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x400",
+                "name":"No"
+            },
+            {
+                "value":"0x0",
+                "name":"Yes"
+            }
+          ]
+        },
+        {
+        "name": "Test Mode",
+        "id": 11,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFEFFF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x1000",
+                "name":"No"
+            },
+            {
+                "value":"0x0",
+                "name":"Yes"
+            }
+            ]
+        },
+        {
+        "name": "Clear Stage Power-Up",
+        "id": 12,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFDFFF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x2000",
+                "name":"50"
+            },
+            {
+                "value":"0x0",
+                "name":"0"
+            }
+          ]
+        },
+        {
+        "name": "Game Start Points",
+        "id": 13,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFBFFF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x4000",
+                "name":"230"
+            },
+            {
+                "value":"0x0",
+                "name":"200"
+            }
+          ]
+        },
+        {
+        "name": "Setting Select",
+        "id": 14,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFF7FFF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x8000",
+                "name":"2P"
+            },
+            {
+                "value":"0x0",
+                "name":"3P"
+            }
+            ]
+        },
+        {
+          "id": 0,
+          "name": "----------------",
+          "type": "action",
+          "enabled": false,
+          "address": "0xF0000000",
+          "value": 0
+        }
+      ]
+    }
+  }

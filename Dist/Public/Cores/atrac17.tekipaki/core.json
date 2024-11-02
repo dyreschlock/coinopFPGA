@@ -1,0 +1,34 @@
+{
+    "core": {
+        "magic": "APF_VER_1",
+        "metadata": {
+            "platform_ids": ["tekipaki"],
+            "shortname": "tekipaki",
+            "description": "Teki Paki",
+            "author": "atrac17",
+            "url": "https://patreon.com/atrac17",
+            "version": "1.0.1",
+            "date_release": "2024-05-18"
+        },
+        "framework": {
+            "target_product": "Analogue Pocket",
+            "version_required": "1.1",
+            "sleep_supported": false,
+            "dock": {
+                "supported": true,
+                "analog_output": false
+            },
+            "hardware": {
+                "link_port": false,
+                "cartridge_adapter": -1
+            }
+        },
+        "cores": [
+            {
+                "name": "tekipaki",
+                "id": 0,
+                "filename": "tekipaki.rbf_r"
+            }
+        ]
+    }
+}

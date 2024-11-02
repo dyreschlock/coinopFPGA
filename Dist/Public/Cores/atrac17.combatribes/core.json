@@ -1,0 +1,34 @@
+{
+    "core": {
+        "magic": "APF_VER_1",
+        "metadata": {
+            "platform_ids": ["combatribes", "coinopkey"],
+            "shortname": "combatribes",
+            "description": "The Combatribes Analogue Pocket Core",
+            "author": "atrac17",
+            "url": "https://github.com/Coin-OpCollection",
+            "version": "1.0.2",
+            "date_release": "2024-11-02"
+        },
+        "framework": {
+            "target_product": "Analogue Pocket",
+            "version_required": "1.1",
+            "sleep_supported": false,
+            "dock": {
+                "supported": true,
+                "analog_output": false
+            },
+            "hardware": {
+                "link_port": false,
+                "cartridge_adapter": -1
+            }
+        },
+        "cores": [
+            {
+                "name": "COMBATRIBES",
+                "id": 0,
+                "filename": "combat.rbf_r"
+            }
+        ]
+    }
+}

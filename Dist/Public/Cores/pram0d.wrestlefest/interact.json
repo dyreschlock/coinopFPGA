@@ -1,0 +1,271 @@
+{
+    "interact": {
+      "magic": "APF_VER_1",
+      "variables": [
+        {
+          "id": 0,
+          "name": "----------------",
+          "type": "action",
+          "enabled": false,
+          "address": "0xF0000000",
+          "value": 0
+        },
+        {
+          "name": "Coin",
+          "id": 2,
+          "type": "list",
+          "enabled": true,
+          "persist": true,
+          "address": "0xFA000000",
+          "mask": "0xFFFFFFFC",
+          "defaultval": 0,
+          "options":[
+            {
+                "value":"0x3",
+                "name":"1 Coin 1 Play"
+            },
+            {
+                "value":"0x2",
+                "name":"1 Coin 2 Play"
+            },
+            {
+                "value":"0x1",
+                "name":"2 Coin 1 Play"
+            },
+            {
+                "value":"0x0",
+                "name":"3 Coin 1 Play"
+            }
+          ]
+        },
+        {
+        "name": "Continue Price",
+        "id": 3,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFEF",
+        "defaultval": 1,
+        "options":[
+            {
+                "value":"0x0",
+                "name":"Without Continue Price"
+            },
+            {
+                "value":"0x10",
+                "name":"With Continue Price"
+            }
+          ]
+        },
+        {
+        "name": "Sound for Demo",
+        "id": 4,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFDF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x20",
+                "name":"Sound"
+            },
+            {
+                "value":"0x0",
+                "name":"No Sound"
+            }
+          ]
+        },
+        {
+        "name": "Screen Invert",
+        "id": 5,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFBF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x40",
+                "name":"Normal"
+            },
+            {
+                "value":"0x0",
+                "name":"Invert"
+            }
+          ]
+        },
+        {
+        "name": "F.B.I. Logo",
+        "id": 6,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFF7F",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x80",
+                "name":"Yes"
+            },
+            {
+                "value":"0x0",
+                "name":"No"
+            }
+          ]
+        },
+        {
+        "name": "Regain Power Price",
+        "id": 7,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFF7",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x8",
+                "name":"Yes"
+            },
+            {
+                "value":"0x0",
+                "name":"No"
+            }
+          ]
+        },
+        {
+        "name": "Buy-in Price",
+        "id": 8,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFFB",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x4",
+                "name":"With Buy-in Price"
+            },
+            {
+                "value":"0x0",
+                "name":"Without Buy-in Price"
+            }
+          ]
+        },
+        {
+        "name": "Degree of Difficulty",
+        "id": 9,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFCFF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x300",
+                "name":"Normal"
+            },
+            {
+                "value":"0x200",
+                "name":"Easy"
+            },
+            {
+                "value":"0x100",
+                "name":"Difficult"
+            },
+            {
+                "value":"0x0",
+                "name":"Most Difficult"
+            }
+          ]
+        },
+        {
+        "name": "Setting Select",
+        "id": 10,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFF3FF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0xC00",
+                "name":"4-Play Setting"
+            },
+            {
+                "value":"0x800",
+                "name":"3-Play Setting"
+            },
+            {
+                "value":"0x400",
+                "name":"2-Play Setting"
+            }
+          ]
+        },
+        {
+        "name": "Clear Stage Power-Up",
+        "id": 11,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFF9FFF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x6000",
+                "name":"24"
+            },
+            {
+                "value":"0x4000",
+                "name":"32"
+            },
+            {
+                "value":"0x2000",
+                "name":"12"
+            },
+            {
+                "value":"0x0",
+                "name":"0"
+            }
+          ]
+        },
+        {
+        "name": "Championship Games",
+        "id": 12,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFF7FFF",
+        "defaultval": 0,
+        "options":[
+            {
+                "value":"0x8000",
+                "name":"5th"
+            },
+            {
+                "value":"0x0",
+                "name":"4th"
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "name": "----------------",
+          "type": "action",
+          "enabled": false,
+          "address": "0xF0000000",
+          "value": 0
+        }
+      ]
+    }
+  }

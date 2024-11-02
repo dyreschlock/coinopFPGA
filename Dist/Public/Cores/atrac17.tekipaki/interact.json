@@ -1,0 +1,171 @@
+{
+  "interact": {
+    "magic": "APF_VER_1",
+    "variables": [
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false,
+        "address": "0xF0000000",
+        "value": 0
+      },
+      {
+        "name": "Service Mode",
+        "id": 2,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFFB",
+        "defaultval": 0,
+        "options":[
+          {
+              "value":"0x0",
+              "name":"Normal Mode"
+          },
+          {
+              "value":"0x4",
+              "name":"Test Mode"
+          }
+        ]
+      },
+      {
+        "name": "Region Select",
+        "id": 3,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFF0FFFF",
+        "defaultval": 0,
+        "options":[
+          {
+              "value":"0",
+              "name":"Japan"
+          },
+          {
+              "value":"65536",
+              "name":"USA"
+          },
+          {
+              "value":"131072",
+              "name":"Europe"
+          },
+          {
+              "value":"196608",
+              "name":"Hong Kong"
+          },
+          {
+              "value":"262144",
+              "name":"Korea"
+          },
+          {
+              "value":"327680",
+              "name":"Taiwan"
+          },
+          {
+              "value":"393216",
+              "name":"Taiwan (Spacy Co., Ltd.)"
+          },
+          {
+              "value":"458752",
+              "name":"USA (Romstar)"
+          },
+          {
+              "value":"524288",
+              "name":"Hong Kong (Honest Trading)"
+          },
+          {
+              "value":"983040",
+              "name":"Japan (Distributed by Tecmo)"
+          }
+        ]
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false,
+        "address": "0xF0000000",
+        "value": 0
+      },
+      {
+        "name": "Advertise Sound",
+        "id": 4,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFF7",
+        "defaultval": 0,
+        "options":[
+          {
+              "value":"0x0",
+              "name":"On"
+          },
+          {
+              "value":"0x8",
+              "name":"Off"
+          }
+        ]
+      },
+      {
+        "name": "Difficulty",
+        "id": 5,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFCFF",
+        "defaultval": 0,
+        "options": [
+          {
+            "value": 0,
+            "name": "Normal"
+          },
+          {
+            "value": 256,
+            "name": "Easy"
+          },
+          {
+            "value": 512,
+            "name": "Hard"
+          },
+          {
+            "value": 768,
+            "name": "Very Hard"
+          }
+        ]
+      },
+      {
+        "name": "Stop Mode",
+        "id": 6,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFBFFF",
+        "defaultval": 0,
+        "options":[
+          {
+              "value":"0x0",
+              "name":"Off"
+          },
+          {
+              "value":"0x4000",
+              "name":"On"
+          }
+        ]
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false,
+        "address": "0xF0000000",
+        "value": 0
+      },
+    ]
+  }
+}

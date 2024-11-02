@@ -1,0 +1,164 @@
+{
+  "interact": {
+    "magic": "APF_VER_1",
+    "variables": [
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+        "name": "Overscan Crop",
+        "id": 2,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "defaultval": 0,
+        "value": "0x1",
+        "value_off":"0x0",
+        "address": "0xFA000008",
+        "mask": "0xFFFFFFFE"
+      },
+      {
+        "name": "Test Switch",
+        "id": 3,
+        "type": "check",
+        "enabled": true,
+        "persist": false,
+        "address": "0xFA000000",
+        "value": "0x5EFF",
+        "value_off": "0x5FFF",
+        "mask": "0xFFFF0000"
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+        "name": "Select Kombat Zone",
+        "id": 41,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "mask": "0xFFFFFFF0",
+        "options": [
+          {
+            "value": "0xF",
+            "name": "Default"
+          },
+          {
+            "value": "0x0",
+            "name": "The Courtyard"
+          },
+          {
+            "value": "0x1",
+            "name": "Palace Gates"
+          },
+          {
+            "value": "0x2",
+            "name": "Warrior Shrine"
+          },
+          {
+            "value": "0x3",
+            "name": "The Pit (Bridge)"
+          },
+          {
+            "value": "0x4",
+            "name": "Throne Room"
+          },
+          {
+            "value": "0x5",
+            "name": "Goro's Lair"
+          },
+          {
+            "value": "0x9",
+            "name": "The Pit (Bottom)"
+          }
+        ]
+      },
+      {
+        "name": "P1 Inf. Energy",
+        "id": 42,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x10",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFEF"
+      },
+      {
+        "name": "P2 Inf. Energy",
+        "id": 43,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x20",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFDF"
+      },
+      {
+        "name": "Infinite Time",
+        "id": 46,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x300",
+        "value_off": "0x0",
+        "mask": "0xFFFFFCFF"
+      },
+      {
+        "name": "CPU Fatalities",
+        "id": 44,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x40",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFBF"
+      },
+      {
+        "name": "Speed Enhanced",
+        "id": 45,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x80",
+        "value_off": "0x0",
+        "mask": "0xFFFFFF7F"
+      },
+      {
+        "name": "EJB Menu",
+        "id": 47,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x400",
+        "value_off": "0x0",
+        "mask": "0xFFFFFBFF"
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      }
+    ]
+  }
+}
