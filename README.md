@@ -2,7 +2,7 @@
 
 This repository contains distribution files for FPGA implementations created by the Coin-Op Collection release group, targeting the Analogue Pocket OpenFPGA platform. Access to beta cores requires Patreon membership. If you are a member, please refer to the tutorial below.
 
-<br>
+![github_readme](https://github.com/user-attachments/assets/1c8edf26-ce08-4ee5-890d-1642c083beb3)
 
 ### Eighting / Raizing Hardware
 
