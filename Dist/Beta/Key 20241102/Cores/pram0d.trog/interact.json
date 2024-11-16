@@ -1,0 +1,105 @@
+{
+  "interact": {
+    "magic": "APF_VER_1",
+    "variables": [
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+      "name": "Select Dinosaur",
+      "id": 3,
+      "type": "list",
+      "enabled": true,
+      "persist": true,
+      "address": "0xFA000008",
+      "mask": "0xFFFFFFE3",
+      "defaultval": 0,
+      "options":[
+          {
+              "value":"0x04",
+              "name":"Rex"
+          },
+          {
+              "value":"0x0",
+              "name":"Bloop"
+          },
+          {
+              "value":"0x10",
+              "name":"Spike"
+          },
+          {
+              "value":"0x08",
+              "name":"Gwen"
+          }
+        ]
+      },
+      {
+        "name": "Test Switch",
+        "id": 2,
+        "type": "check",
+        "enabled": true,
+        "persist": false,
+        "address": "0xFA000000",
+        "value": "0xFEBF",
+        "value_off": "0xFFBF",
+        "mask": "0xFFFF0000"
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+        "name": "Island",
+        "id": 41,
+        "type": "slider_u32",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "mask": "0xFFFFFFC0",
+        "defaultval": 49,
+        "graphical": {
+          "signed": false,
+          "min": 1,
+          "max": 49,
+          "adjust_small": 1,
+          "adjust_large": 5
+        }
+      },
+      {
+        "name": "Invincibility",
+        "id": 43,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x80",
+        "value_off": "0x0",
+        "mask": "0xFFFFFF7F"
+      },
+      {
+        "name": "Inf. Lives",
+        "id": 42,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x40",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFBF"
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      }
+    ]
+  }
+}
