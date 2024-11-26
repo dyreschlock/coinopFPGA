@@ -1,0 +1,119 @@
+{
+  "interact": {
+    "magic": "APF_VER_1",
+    "variables": [
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+        "name": "Reset",
+        "id": 1,
+        "type": "check",
+        "enabled": true,
+        "persist": false,
+        "address": "0xFA000000",
+        "value": "0x10000",
+        "value_off": "0x0",
+        "mask": "0xFFFEFFFF"
+      },
+      {
+        "name": "Test Switch",
+        "id": 2,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "value": "0xFEBF",
+        "value_off": "0xFFBF",
+        "mask": "0xFFFF0000"
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+        "name": "Inf. Time (Quarter)",
+        "id": 41,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x1",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFFE"
+      },
+      {
+        "name": "End Quarter",
+        "id": 42,
+        "type": "check",
+        "enabled": true,
+        "persist": false,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x2",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFFD"
+      },
+      {
+        "name": "Inf. Time (Player 1)",
+        "id": 43,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x4",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFFB"
+      },
+      {
+        "name": "Inf. Time (Player 2)",
+        "id": 44,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x8",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFF7"
+      },
+      {
+        "name": "Inf. Time (Player 3)",
+        "id": 45,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x10",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFEF"
+      },
+      {
+        "name": "Inf. Time (Player 4)",
+        "id": 46,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x20",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFDF"
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      }
+    ]
+  }
+}

@@ -9,36 +9,8 @@
         "enabled": false
       },
       {
-      "name": "Select Dinosaur",
-      "id": 3,
-      "type": "list",
-      "enabled": true,
-      "persist": true,
-      "address": "0xFA000008",
-      "mask": "0xFFFFFFE3",
-      "defaultval": 0,
-      "options":[
-          {
-              "value":"0x04",
-              "name":"Rex"
-          },
-          {
-              "value":"0x0",
-              "name":"Bloop"
-          },
-          {
-              "value":"0x10",
-              "name":"Spike"
-          },
-          {
-              "value":"0x08",
-              "name":"Gwen"
-          }
-        ]
-      },
-      {
         "name": "Test Switch",
-        "id": 2,
+        "id": 1,
         "type": "check",
         "enabled": true,
         "persist": false,
@@ -54,7 +26,7 @@
         "enabled": false
       },
       {
-        "name": "Island",
+        "name": "Select Island",
         "id": 41,
         "type": "slider_u32",
         "enabled": true,
@@ -72,7 +44,7 @@
       },
       {
         "name": "Invincibility",
-        "id": 43,
+        "id": 42,
         "type": "check",
         "enabled": true,
         "persist": true,
@@ -84,7 +56,7 @@
       },
       {
         "name": "Inf. Lives",
-        "id": 42,
+        "id": 43,
         "type": "check",
         "enabled": true,
         "persist": true,
