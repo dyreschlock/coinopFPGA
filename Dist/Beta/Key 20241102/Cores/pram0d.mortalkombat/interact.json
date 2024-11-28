@@ -10,7 +10,7 @@
       },
       {
         "name": "Overscan Crop",
-        "id": 2,
+        "id": 1,
         "type": "check",
         "enabled": true,
         "persist": true,
@@ -22,7 +22,7 @@
       },
       {
         "name": "Test Switch",
-        "id": 3,
+        "id": 2,
         "type": "check",
         "enabled": true,
         "persist": false,
