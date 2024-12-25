@@ -1,0 +1,114 @@
+<misterromdescription>
+    <about author="pram0d" webpage="https://pram0d.com" source="https://github.com/psomashekar" twitter="@pr4m0d"/>
+    <name>Strike Force (rev 1 02/25/91)</name>
+    <setname>strkforc</setname>
+    <rbf>yunit</rbf>
+    <mameversion>0260</mameversion>
+    <year>1991</year>
+    <manufacturer>Midway</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>Horizontal</rotation>
+    <region>World</region>
+    <platform>Midway Y-Unit</platform>
+    <category>Shooter</category>
+    <catver>Shooter / Flying</catver>
+    <mraauthor>atrac17</mraauthor>
+
+    <rom index="0" zip="strkforc.zip" md5="None" address="0x30000000">
+        <!-- mapper for game -->
+        <part>05</part>
+
+        <!-- user1 - starts at 0x0 -->
+        <part repeat="786432">00</part>
+        <interleave output="16">
+            <part name="la1_strike_force_game_rom_u105.u105" crc="7895e0e3" map="01"/>
+            <part name="la1_strike_force_game_rom_u89.u89"   crc="26114d9e" map="10"/>
+        </interleave>
+
+        <!-- cvsd:cpu - starts at 0x100000 -->
+        <part repeat="65536">00</part>
+        <part name="sl1_strike_force_sound_rom_u4.u4"   crc="8f747312"/>
+        <part name="sl1_strike_force_sound_rom_u4.u4"   crc="8f747312"/>
+        <part name="sl1_strike_force_sound_rom_u19.u19" crc="afb29926"/>
+        <part name="sl1_strike_force_sound_rom_u19.u19" crc="afb29926"/>
+        <part name="sl1_strike_force_sound_rom_u20.u20" crc="1bc9b746"/>
+        <part name="sl1_strike_force_sound_rom_u20.u20" crc="1bc9b746"/>
+        <part repeat="131072">00</part>
+
+        <!-- gfx1 - starts at 0x130000 -->
+        <interleave output="32">
+            <part name="la1_strike_force_game_rom_u111.u111" crc="878efc80" map="0001"/>
+            <part name="la1_strike_force_game_rom_u95.u95"   crc="519cb2b4" map="0010"/>
+            <part name="la1_strike_force_game_rom_u111.u111" crc="878efc80" map="0100"/>
+            <part name="la1_strike_force_game_rom_u95.u95"   crc="519cb2b4" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="la1_strike_force_game_rom_u112.u112" crc="93394399" map="0001"/>
+            <part name="la1_strike_force_game_rom_u96.u96"   crc="61214796" map="0010"/>
+            <part name="la1_strike_force_game_rom_u112.u112" crc="93394399" map="0100"/>
+            <part name="la1_strike_force_game_rom_u96.u96"   crc="61214796" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="la1_strike_force_game_rom_u113.u113" crc="9565a79b" map="0001"/>
+            <part name="la1_strike_force_game_rom_u97.u97"   crc="eb5dee5f" map="0010"/>
+            <part name="la1_strike_force_game_rom_u113.u113" crc="9565a79b" map="0100"/>
+            <part name="la1_strike_force_game_rom_u97.u97"   crc="eb5dee5f" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="la1_strike_force_game_rom_u114.u114" crc="b71152da" map="0001"/>
+            <part name="la1_strike_force_game_rom_u98.u98"   crc="c5c079e7" map="0010"/>
+            <part name="la1_strike_force_game_rom_u114.u114" crc="b71152da" map="0100"/>
+            <part name="la1_strike_force_game_rom_u98.u98"   crc="c5c079e7" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="la1_strike_force_game_rom_u106.u106" crc="a394d4cf" map="0001"/>
+            <part name="la1_strike_force_game_rom_u90.u90"   crc="607bcdc0" map="0010"/>
+            <part name="la1_strike_force_game_rom_u106.u106" crc="a394d4cf" map="0100"/>
+            <part name="la1_strike_force_game_rom_u90.u90"   crc="607bcdc0" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="la1_strike_force_game_rom_u107.u107" crc="edef1419" map="0001"/>
+            <part name="la1_strike_force_game_rom_u91.u91"   crc="da02547e" map="0010"/>
+            <part name="la1_strike_force_game_rom_u107.u107" crc="edef1419" map="0100"/>
+            <part name="la1_strike_force_game_rom_u91.u91"   crc="da02547e" map="1000"/>
+        </interleave>
+        <!-- Total 0x2B0000 bytes - 2752 kBytes -->
+    </rom>
+
+    <nvram index="2" size="32768"/>
+
+    <!--    DSW Frome MAME 260
+        <dip name="Coin Meter" bits="0" ids="Independent,Shared"/>
+        <dip name="Credits to Start" bits="1" ids="2,1"/>
+        <dip name="Points for Ship" bits="2,3" ids="10k0,75000,40k,50k"/>
+        <dip name="Lives" bits="4" ids="4,3"/>
+        <dip name="Difficulty" bits="5,7" ids="Level 8,Level 7,Level 6,Level 5,Level 1,Level 3,Level 2,Level 4"/>
+        <dip name="Coin B" bits="8,10" ids="Free Play,U.K. Elect.,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin A" bits="11,14" ids="1/2 - 2/5,3/1 - 5/2,1/1 - 5/6,1/1 - 4/5,1/1 - 3/4,1/1 - 2/3,5/1,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Test Switch" bits="15" ids="On,Off"/>
+    -->
+
+    <switches default="ff,ff,ff">
+        <!-- DSW A -->
+            <dip name="8" bits="7" ids="OFF, ON" values="1,0" />
+            <dip name="7" bits="6" ids="OFF, ON" values="1,0" />
+            <dip name="6" bits="5" ids="OFF, ON" values="1,0" />
+            <dip name="5" bits="4" ids="OFF, ON" values="1,0" />
+            <dip name="4" bits="3" ids="OFF, ON" values="1,0" />
+            <dip name="3" bits="2" ids="OFF, ON" values="1,0" />
+            <dip name="2" bits="1" ids="OFF, ON" values="1,0" />
+            <dip name="1" bits="0" ids="OFF, ON" values="1,0" />
+        <!-- DSW B -->
+            <dip name="16" bits="15" ids="OFF, ON" values="1,0" />
+            <dip name="15" bits="14" ids="OFF, ON" values="1,0" />
+            <dip name="14" bits="13" ids="OFF, ON" values="1,0" />
+            <dip name="13" bits="12" ids="OFF, ON" values="1,0" />
+            <dip name="12" bits="11" ids="OFF, ON" values="1,0" />
+            <dip name="11" bits="10" ids="OFF, ON" values="1,0" />
+            <dip name="10" bits="9"  ids="OFF, ON" values="1,0" />
+            <dip name="9"  bits="8"  ids="OFF, ON" values="1,0" />
+        </switches>
+
+    <buttons names="Weapon Select,Fire,Weapon,-,-,-,Start,Coin,Pause" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+</misterromdescription>

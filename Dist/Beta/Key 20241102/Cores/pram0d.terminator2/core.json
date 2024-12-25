@@ -1,0 +1,34 @@
+{
+    "core": {
+        "magic": "APF_VER_1",
+        "metadata": {
+            "platform_ids": ["terminator2", "coinopkey"],
+            "shortname": "terminator2",
+            "description": "Midway Y-Unit Analogue Pocket Core",
+            "author": "pram0d",
+            "url": "https://pram0d.com",
+            "version": "1.0.6",
+            "date_release": "2024-12-25"
+        },
+        "framework": {
+            "target_product": "Analogue Pocket",
+            "version_required": "1.1",
+            "sleep_supported": false,
+            "dock": {
+                "supported": true,
+                "analog_output": false
+            },
+            "hardware": {
+                "link_port": false,
+                "cartridge_adapter": -1
+            }
+        },
+        "cores": [
+            {
+                "name": "TERMINATOR2",
+                "id": 0,
+                "filename": "yunitad.rbf_r"
+            }
+        ]
+    }
+}

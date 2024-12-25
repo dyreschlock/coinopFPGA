@@ -1,0 +1,105 @@
+<misterromdescription>
+    <about author="pram0d" webpage="https://pram0d.com" source="https://github.com/psomashekar" twitter="@pr4m0d"/>
+    <name>Terminator 2 - Judgment Day (rev LA4 08/03/92)</name>
+    <setname>term2</setname>
+    <rbf>yunit</rbf>
+    <mameversion>0260</mameversion>
+    <year>1992</year>
+    <manufacturer>Midway</manufacturer>
+    <players>2</players>
+    <joystick>none</joystick>
+    <rotation>Horizontal</rotation>
+    <region>World</region>
+    <platform>Midway Y-Unit</platform>
+    <category>Shooter</category>
+    <catver>Shooter / Gun</catver>
+    <mraauthor>atrac17</mraauthor>
+
+    <rom index="0" zip="term2.zip" md5="None" address="0x30000000">
+        <!-- mapper for game -->
+        <part>01</part>
+
+        <!-- user1 - starts at 0x0 -->
+        <interleave output="16">
+            <part name="la4_terminator_2_game_rom_u105.u105" crc="d4d8d884" map="01"/>
+            <part name="la4_terminator_2_game_rom_u89.u89"   crc="25359415" map="10"/>
+        </interleave>
+
+        <!-- adpcm:cpu - starts at 0x100000 -->
+        <part repeat="0x10000">00</part>
+        <part name="sl1_terminator_2_u3_sound_rom.u3" crc="73c3f5c4"/>
+        <part name="sl1_terminator_2_u3_sound_rom.u3" crc="73c3f5c4"/>
+
+        <!-- adpcm:oki - starts at 0x120000 -->
+        <part name="sl1_terminator_2_u12_sound_rom.u12" crc="e192a40d"/>
+        <part name="sl1_terminator_2_u12_sound_rom.u12" crc="e192a40d"/>
+        <part name="sl1_terminator_2_u13_sound_rom.u13" crc="956fa80b"/>
+        <part name="sl1_terminator_2_u13_sound_rom.u13" crc="956fa80b"/>
+
+        <!-- gfx1 - starts at 0x1A0000 -->
+        <interleave output="32">
+            <part name="la1_terminator_2_game_rom_u111.u111" crc="916d0197" map="0001"/>
+            <part name="la1_terminator_2_game_rom_u95.u95"   crc="dd39cf73" map="0010"/>
+            <part name="la1_terminator_2_game_rom_u106.u106" crc="f08a9536" map="0100"/>
+            <part name="la1_terminator_2_game_rom_u106.u106" crc="f08a9536" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="la1_terminator_2_game_rom_u112.u112" crc="39ae1c87" map="0001"/>
+            <part name="la1_terminator_2_game_rom_u96.u96"   crc="31f4fd36" map="0010"/>
+            <part name="la1_terminator_2_game_rom_u107.u107" crc="268d4035" map="0100"/>
+            <part name="la1_terminator_2_game_rom_u107.u107" crc="268d4035" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="la1_terminator_2_game_rom_u113.u113" crc="cb5084e5" map="0001"/>
+            <part name="la1_terminator_2_game_rom_u97.u97"   crc="7f72e775" map="0010"/>
+            <part name="la1_terminator_2_game_rom_u108.u108" crc="379fdaed" map="0100"/>
+            <part name="la1_terminator_2_game_rom_u108.u108" crc="379fdaed" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="la1_terminator_2_game_rom_u114.u114" crc="53c516ec" map="0001"/>
+            <part name="la1_terminator_2_game_rom_u98.u98"   crc="1a20ce29" map="0010"/>
+            <part name="la1_terminator_2_game_rom_u109.u109" crc="306a9366" map="0100"/>
+            <part name="la1_terminator_2_game_rom_u109.u109" crc="306a9366" map="1000"/>
+        </interleave>
+        <!-- Total 0x7A0000 bytes - 7808 kBytes -->
+    </rom>
+
+    <nvram index="2" size="32768"/>
+
+    <!--    DSW Frome MAME 260
+        <dip name="Credits" bits="0,2" ids="3 Start/3 Continue,3 Start/1 Continue,3 Start/2 Continue,1 Start/1 Continue,4 Start/2 Continue,2 Start/2 Continue,4 Start/1 Continue,2 Start/1 Continue"/>
+        <dip name="Coinage" bits="3,5" ids="Free Play,4,2,3,ECA,1"/>
+        <dip name="Dipswitch Coinage" bits="6" ids="Off,On"/>
+        <dip name="Normal Display" bits="7" ids="On,Off"/>
+        <dip name="Test Switch" bits="8" ids="On,Off"/>
+        <dip name="Video Freeze" bits="9" ids="On,Off"/>
+        <dip name="Unused" bits="10" ids="On,Off"/>
+        <dip name="Players" bits="11" ids="1 Player,2 Players"/>
+        <dip name="Two Counters" bits="12" ids="On,Off"/>
+        <dip name="Powerup Test" bits="13" ids="Off,On"/>
+        <dip name="Country" bits="14,15" ids="German,French,USA"/>
+    -->
+
+    <switches default="ff,ff,ff">
+    <!-- DSW A -->
+        <dip name="8" bits="7" ids="OFF, ON" values="1,0" />
+        <dip name="7" bits="6" ids="OFF, ON" values="1,0" />
+        <dip name="6" bits="5" ids="OFF, ON" values="1,0" />
+        <dip name="5" bits="4" ids="OFF, ON" values="1,0" />
+        <dip name="4" bits="3" ids="OFF, ON" values="1,0" />
+        <dip name="3" bits="2" ids="OFF, ON" values="1,0" />
+        <dip name="2" bits="1" ids="OFF, ON" values="1,0" />
+        <dip name="1" bits="0" ids="OFF, ON" values="1,0" />
+    <!-- DSW B -->
+        <dip name="16" bits="15" ids="OFF, ON" values="1,0" />
+        <dip name="15" bits="14" ids="OFF, ON" values="1,0" />
+        <dip name="14" bits="13" ids="OFF, ON" values="1,0" />
+        <dip name="13" bits="12" ids="OFF, ON" values="1,0" />
+        <dip name="12" bits="11" ids="OFF, ON" values="1,0" />
+        <dip name="11" bits="10" ids="OFF, ON" values="1,0" />
+        <dip name="10" bits="9"  ids="OFF, ON" values="1,0" />
+        <dip name="9"  bits="8"  ids="OFF, ON" values="1,0" />
+    </switches>
+
+    <buttons names="Shot,Bomb,-,-,-,-,Start,Coin,Pause" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+</misterromdescription>

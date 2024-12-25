@@ -1,0 +1,148 @@
+{
+  "interact": {
+    "magic": "APF_VER_1",
+    "variables": [
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+        "name": "Test Switch",
+        "id": 1,
+        "type": "check",
+        "enabled": true,
+        "persist": false,
+        "address": "0xFA000000",
+        "value": "0x7FFF",
+        "value_off": "0xFFFF",
+        "mask": "0xFFFF0000"
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+        "name": "Starting Credits",
+        "id": 2,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFFD",
+        "defaultval": 0,
+        "options":[
+          {
+            "value":"0x2",
+            "name":"1 Credit"
+          },
+          {
+            "value":"0x0",
+            "name":"2 Credits"
+          }
+        ]
+      },
+      {
+        "name": "Player Extend",
+        "id": 3,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFF3",
+        "defaultval": 0,
+        "options":[
+          {
+            "value":"0xC",
+            "name":"50000 points"
+          },
+          {
+            "value":"0x8",
+            "name":"40000 points"
+          },
+          {
+            "value":"0x4",
+            "name":"75000 points"
+          },
+          {
+            "value":"0x0",
+            "name":"100000 points"
+          }
+        ]
+      },
+      {
+        "name": "Starting Ships",
+        "id": 4,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFFEF",
+        "defaultval": 0,
+        "options":[
+          {
+            "value":"0x10",
+            "name":"3"
+          },
+          {
+            "value":"0x0",
+            "name":"4"
+          }
+        ]
+      },
+      {
+        "name": "Difficulty",
+        "id": 5,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000000",
+        "mask": "0xFFFFFF1F",
+        "defaultval": 0,
+        "options":[
+          {
+            "value":"0xE0",
+            "name":"4"
+          },
+          {
+            "value":"0x80",
+            "name":"1"
+          },
+          {
+            "value":"0xC0",
+            "name":"2"
+          },
+          {
+            "value":"0xA0",
+            "name":"3"
+          },
+          {
+            "value":"0x60",
+            "name":"5"
+          },
+          {
+            "value":"0x40",
+            "name":"6"
+          },
+          {
+            "value":"0x20",
+            "name":"7"
+          },
+          {
+            "value":"0x0",
+            "name":"8"
+          }
+        ]
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      }
+    ]
+  }
+}

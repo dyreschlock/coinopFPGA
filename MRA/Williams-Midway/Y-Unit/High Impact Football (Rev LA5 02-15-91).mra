@@ -1,0 +1,103 @@
+<misterromdescription>
+    <about author="pram0d" webpage="https://pram0d.com" source="https://github.com/psomashekar" twitter="@pr4m0d"/>
+    <name>High Impact Football (rev LA5 02/15/91)</name>
+    <setname>hiimpact</setname>
+    <rbf>yunit</rbf>
+    <mameversion>0260</mameversion>
+    <year>1990</year>
+    <manufacturer>Midway</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>Horizontal</rotation>
+    <region>World</region>
+    <platform>Midway Y-Unit</platform>
+    <category>Sports</category>
+    <catver>Sports / Football</catver>
+    <mraauthor>atrac17</mraauthor>
+    
+    <rom index="0" zip="hiimpact.zip" md5="None" address="0x30000000">
+        <!-- mapper for game -->
+        <part>03</part>
+
+        <!-- user1 - starts at 0x0 -->
+        <part repeat="786432">00</part>
+        <interleave output="16">
+            <part name="la5_high_impact_game_rom_u105.u105" crc="104c30e7" map="01"/>
+            <part name="la5_high_impact_game_rom_u89.u89"   crc="07aa0010" map="10"/>
+        </interleave>
+
+        <!-- cvsd:cpu - starts at 0x100000 -->
+        <part repeat="65536">00</part>
+        <part name="sl1_high_impact_sound_u4.u4"   crc="28effd6a"/>
+        <part name="sl1_high_impact_sound_u19.u19" crc="0ea22c89"/>
+        <part name="sl1_high_impact_sound_u20.u20" crc="4e747ab5"/>
+        <part repeat="131072">00</part>
+
+        <!-- gfx1 - starts at 0x190000 -->
+        <interleave output="32">
+            <part name="la1_high_impact_game_rom_u111.u111" crc="49560560" map="0001"/>
+            <part name="la1_high_impact_game_rom_u95.u95"   crc="e1352dc0" map="0010"/>
+            <part name="la1_high_impact_game_rom_u106.u106" crc="7d0ead0d" map="0100"/>
+            <part name="la1_high_impact_game_rom_u106.u106" crc="7d0ead0d" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="la1_high_impact_game_rom_u112.u112" crc="4dd879dc" map="0001"/>
+            <part name="la1_high_impact_game_rom_u96.u96"   crc="197d0f34" map="0010"/>
+            <part name="la1_high_impact_game_rom_u107.u107" crc="ef48e8fa" map="0100"/>
+            <part name="la1_high_impact_game_rom_u107.u107" crc="ef48e8fa" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="la1_high_impact_game_rom_u113.u113" crc="b67aeb70" map="0001"/>
+            <part name="la1_high_impact_game_rom_u97.u97"   crc="908ea575" map="0010"/>
+            <part name="la1_high_impact_game_rom_u108.u108" crc="5f363e12" map="0100"/>
+            <part name="la1_high_impact_game_rom_u108.u108" crc="5f363e12" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="la1_high_impact_game_rom_u114.u114" crc="9a4bc44b" map="0001"/>
+            <part name="la1_high_impact_game_rom_u98.u98"   crc="6dcbab11" map="0010"/>
+            <part name="la1_high_impact_game_rom_u109.u109" crc="3689fbbc" map="0100"/>
+            <part name="la1_high_impact_game_rom_u109.u109" crc="3689fbbc" map="1000"/>
+        </interleave>
+        <!-- Total 0x2E0000 bytes - 2944 kBytes -->
+    </rom>
+
+    <nvram index="2" size="32768"/>
+
+    <!--    DSW Frome MAME 260
+        <dip name="Unused" bits="0" ids="On,Off"/>
+        <dip name="Unused" bits="1" ids="On,Off"/>
+        <dip name="Unused" bits="2" ids="On,Off"/>
+        <dip name="Coinage" bits="3,6" ids="Other,Free Play,2/1 4/4,1DM/1,5F/1,2/1,1DM/1 7/5,5F/2,2/1 4/3,1DM/1 8/5,5F/1 10/3,ECA,ECA,ECA,1/1,1DM/1 6/5,5F/2 10/5"/>
+        <dip name="Players" bits="7" ids="2,4"/>
+        <dip name="Test Switch" bits="8" ids="On,Off"/>
+        <dip name="Unused" bits="9" ids="On,Off"/>
+        <dip name="Unused" bits="10" ids="On,Off"/>
+        <dip name="Unused" bits="11" ids="On,Off"/>
+        <dip name="Coin Counters" bits="12" ids="2,1"/>
+        <dip name="Power-Up Test" bits="13" ids="Off,On"/>
+        <dip name="Country" bits="14,15" ids="German,French,USA"/>
+    -->
+
+    <switches default="ff,ff,ff">
+    <!-- DSW A -->
+        <dip name="8" bits="7" ids="OFF, ON" values="1,0" />
+        <dip name="7" bits="6" ids="OFF, ON" values="1,0" />
+        <dip name="6" bits="5" ids="OFF, ON" values="1,0" />
+        <dip name="5" bits="4" ids="OFF, ON" values="1,0" />
+        <dip name="4" bits="3" ids="OFF, ON" values="1,0" />
+        <dip name="3" bits="2" ids="OFF, ON" values="1,0" />
+        <dip name="2" bits="1" ids="OFF, ON" values="1,0" />
+        <dip name="1" bits="0" ids="OFF, ON" values="1,0" />
+    <!-- DSW B -->
+        <dip name="16" bits="15" ids="OFF, ON" values="1,0" />
+        <dip name="15" bits="14" ids="OFF, ON" values="1,0" />
+        <dip name="14" bits="13" ids="OFF, ON" values="1,0" />
+        <dip name="13" bits="12" ids="OFF, ON" values="1,0" />
+        <dip name="12" bits="11" ids="OFF, ON" values="1,0" />
+        <dip name="11" bits="10" ids="OFF, ON" values="1,0" />
+        <dip name="10" bits="9"  ids="OFF, ON" values="1,0" />
+        <dip name="9"  bits="8"  ids="OFF, ON" values="1,0" />
+    </switches>
+
+    <buttons names="Action,-,-,-,-,-,Start,Coin,Pause" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+</misterromdescription>

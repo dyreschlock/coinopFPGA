@@ -1,0 +1,32 @@
+{
+  "input": {
+    "magic": "APF_VER_1",
+    "controllers": [
+      {
+        "type": "default",
+        "mappings": [
+          {
+            "id": 0,
+            "name": "Trigger",
+            "key": "pad_btn_a"
+          },
+          {
+            "id": 1,
+            "name": "Bomb",
+            "key": "pad_btn_b"
+          },
+          {
+            "id": 4,
+            "name": "Start",
+            "key": "pad_btn_start"
+          },
+          {
+            "id": 5,
+            "name": "Coin",
+            "key": "pad_btn_select"
+          }
+        ]
+      }
+    ]
+  }
+}

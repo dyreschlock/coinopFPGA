@@ -1,0 +1,163 @@
+{
+  "interact": {
+    "magic": "APF_VER_1",
+    "variables": [
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+        "name": "Control Type",
+        "id": 81,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000008",
+        "mask": "0xFFFFFFFB",
+        "defaultval": 0,
+        "options":[
+          {
+             "value":"0x0",
+             "name":"Joystick / Mouse"
+          },
+          {
+             "value":"0x4",
+             "name":"Gun4IR"
+          }
+        ]
+      },
+      {
+        "name": "Test Switch",
+        "id": 1,
+        "type": "check",
+        "enabled": true,
+        "persist": false,
+        "address": "0xFA000000",
+        "value": "0xCEBF",
+        "value_off": "0xCFBF",
+        "mask": "0xFFFF0000"
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      },
+      {
+        "name": "Select Stage",
+        "id": 41,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "mask": "0xFFFFFFF0",
+        "options": [
+          {
+            "value": "0xF",
+            "name": "Default"
+          },
+          {
+            "value": "0x1",
+            "name": "Battlefield"
+          },
+          {
+            "value": "0x2",
+            "name": "Human Hideout"
+          },
+          {
+            "value": "0x3",
+            "name": "Trip To Skynet"
+          },
+          {
+            "value": "0x4",
+            "name": "Skynet"
+          },
+          {
+            "value": "0x5",
+            "name": "Cyberdyne"
+          },
+          {
+            "value": "0x6",
+            "name": "Escape Cyberdyne"
+          },
+          {
+            "value": "0x7",
+            "name": "Steel Mill"
+          },
+          {
+            "value": "0x9",
+            "name": "Credits"
+          }
+        ]
+      },
+      {
+        "name": "Inf. Energy",
+        "id": 42,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x10",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFEF"
+      },
+      {
+        "name": "Inf. Gun Power",
+        "id": 43,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x40",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFBF"
+      },
+      {
+        "name": "Inf. Rockets",
+        "id": 44,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x20",
+        "value_off": "0x0",
+        "mask": "0xFFFFFFDF"
+      },
+      {
+        "name": "Inf. 3-Way Warhead",
+        "id": 45,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x100",
+        "value_off": "0x0",
+        "mask": "0xFFFFFEFF"
+      },
+      {
+        "name": "Plasma Pulse Rifle",
+        "id": 46,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xFA000004",
+        "defaultval": 0,
+        "value": "0x80",
+        "mask": "0xFFFFFF7F"
+      },
+      {
+        "id": 0,
+        "name": "----------------",
+        "type": "action",
+        "enabled": false
+      }
+    ]
+  }
+}
